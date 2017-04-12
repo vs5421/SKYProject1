@@ -20,6 +20,7 @@ namespace SKYProject1
         }
 
         private string myCon = ConfigurationManager.ConnectionStrings["myCon"].ConnectionString;
+        
 
         private void FrmClient_Load(object sender, EventArgs e)
         {
