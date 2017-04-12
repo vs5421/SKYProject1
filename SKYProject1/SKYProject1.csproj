@@ -52,6 +52,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddClerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddClerk.Designer.cs">
+      <DependentUpon>FrmAddClerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteClerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteClerk.Designer.cs">
+      <DependentUpon>FrmDeleteClerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifyClerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifyClerk.Designer.cs">
+      <DependentUpon>FrmModifyClerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrintClerk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrintClerk.Designer.cs">
+      <DependentUpon>FrmPrintClerk.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +92,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddClerk.resx">
+      <DependentUpon>FrmAddClerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteClerk.resx">
+      <DependentUpon>FrmDeleteClerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifyClerk.resx">
+      <DependentUpon>FrmModifyClerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrintClerk.resx">
+      <DependentUpon>FrmPrintClerk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmShop.resx">
       <DependentUpon>FrmShop.cs</DependentUpon>

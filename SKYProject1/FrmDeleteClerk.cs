@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace SKYProject1
 {
-    public partial class FrmShop : Form
+    public partial class FrmDeleteClerk : Form
     {
-        public FrmShop()
+        public FrmDeleteClerk()
         {
             InitializeComponent();
-        }
-
-        private void btnClerk_Click(object sender, EventArgs e)
-        {
-            FrmPrintClerk f = new FrmPrintClerk();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
         }
     }
 }

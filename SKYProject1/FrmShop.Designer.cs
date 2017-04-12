@@ -40,6 +40,7 @@
             this.btnClerk.TabIndex = 0;
             this.btnClerk.Text = "店员管理";
             this.btnClerk.UseVisualStyleBackColor = true;
+            this.btnClerk.Click += new System.EventHandler(this.btnClerk_Click);
             // 
             // btnClient
             // 
