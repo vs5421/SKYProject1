@@ -36,13 +36,13 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnADD = new System.Windows.Forms.Button();
             this.cmsMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改详细信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnADD = new System.Windows.Forms.Button();
             this.cmsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,32 +89,13 @@
             // 
             this.columnHeader6.Text = "地址";
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(13, 280);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "退出";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // btnADD
-            // 
-            this.btnADD.Location = new System.Drawing.Point(310, 278);
-            this.btnADD.Name = "btnADD";
-            this.btnADD.Size = new System.Drawing.Size(86, 23);
-            this.btnADD.TabIndex = 2;
-            this.btnADD.Text = "添加店员信息";
-            this.btnADD.UseVisualStyleBackColor = true;
-            this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
-            // 
             // cmsMenu
             // 
             this.cmsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.修改ToolStripMenuItem,
             this.删除ToolStripMenuItem});
             this.cmsMenu.Name = "cmsMenu";
-            this.cmsMenu.Size = new System.Drawing.Size(153, 70);
+            this.cmsMenu.Size = new System.Drawing.Size(101, 48);
             // 
             // 修改ToolStripMenuItem
             // 
@@ -125,24 +106,45 @@
             this.修改ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.修改ToolStripMenuItem.Text = "修改";
             // 
-            // 删除ToolStripMenuItem
-            // 
-            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.删除ToolStripMenuItem.Text = "删除";
-            // 
             // 修改详细信息ToolStripMenuItem
             // 
             this.修改详细信息ToolStripMenuItem.Name = "修改详细信息ToolStripMenuItem";
-            this.修改详细信息ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.修改详细信息ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.修改详细信息ToolStripMenuItem.Text = "修改详细信息";
             this.修改详细信息ToolStripMenuItem.Click += new System.EventHandler(this.修改详细信息ToolStripMenuItem_Click);
             // 
             // 修改密码ToolStripMenuItem
             // 
             this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.修改密码ToolStripMenuItem.Text = "修改密码";
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(13, 280);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "退出";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnADD
+            // 
+            this.btnADD.Location = new System.Drawing.Point(310, 278);
+            this.btnADD.Name = "btnADD";
+            this.btnADD.Size = new System.Drawing.Size(86, 23);
+            this.btnADD.TabIndex = 2;
+            this.btnADD.Text = "添加店员信息";
+            this.btnADD.UseVisualStyleBackColor = true;
+            this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
             // FrmPrintClerk
             // 

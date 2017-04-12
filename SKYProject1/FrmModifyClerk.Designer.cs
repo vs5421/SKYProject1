@@ -42,7 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cboUid = new System.Windows.Forms.ComboBox();
+            this.txtUid = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnModify
@@ -169,22 +169,19 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "用  户  名：";
             // 
-            // cboUid
+            // txtUid
             // 
-            this.cboUid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboUid.FormattingEnabled = true;
-            this.cboUid.Location = new System.Drawing.Point(115, 27);
-            this.cboUid.Name = "cboUid";
-            this.cboUid.Size = new System.Drawing.Size(144, 20);
-            this.cboUid.TabIndex = 38;
-            this.cboUid.TextChanged += new System.EventHandler(this.cboUid_TextChanged);
+            this.txtUid.Location = new System.Drawing.Point(115, 26);
+            this.txtUid.Name = "txtUid";
+            this.txtUid.Size = new System.Drawing.Size(145, 21);
+            this.txtUid.TabIndex = 38;
             // 
             // FrmModifyClerk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 298);
-            this.Controls.Add(this.cboUid);
+            this.Controls.Add(this.txtUid);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtAddress);
@@ -223,6 +220,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cboUid;
+        private System.Windows.Forms.TextBox txtUid;
     }
 }

@@ -17,7 +17,8 @@ namespace SKYProject1
         {
             InitializeComponent();
         }
-        string strCon = @"server=.\SQL2014;database=SkyProject;uid=sa;password=123";
+        //string strCon = @"server=.\SQL2014;database=SkyProject;uid=sa;password=123";
+        string strCon = @"server=DESKTOP-CBE5RT7;database=SkyProject;uid=sa;password=123";
         private void FrmPrintClerk_EnabledChanged(object sender, EventArgs e)
         {
            
@@ -33,6 +34,7 @@ namespace SKYProject1
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
+                    this.listView1.Items.Clear();
                     string Uid = reader.GetString(reader.GetOrdinal("Uid"));
                     string ClerkName = reader.GetString(reader.GetOrdinal("ClerkName"));
                     string sex = reader.GetString(reader.GetOrdinal("sex"));
@@ -45,6 +47,7 @@ namespace SKYProject1
                     list.SubItems.Add(TelePhone);
                     list.SubItems.Add(IDNumber);
                     list.SubItems.Add(Address);
+                    list.Tag = Uid;
                     this.listView1.Items.Add(list);
                 }
                 reader.Close();
@@ -61,10 +64,30 @@ namespace SKYProject1
 
         private void 修改详细信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string Uid = listView1.SelectedItems[0].Tag.ToString();
+            if (Uid != null)
+            {
+                FrmModifyClerk f = new FrmModifyClerk(Uid);
+                f.ShowDialog();
+                FrmPrintClerk_Load(sender, e);
+            }
+        }
 
-            FrmModifyClerk f = new FrmModifyClerk();
-            f.ShowDialog();
-            FrmPrintClerk_Load(sender, e);
+        private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string Uid = listView1.SelectedItems[0].Tag.ToString();
+            DialogResult f = MessageBox.Show("是否删除", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (f == DialogResult.OK)
+            {
+                FrmDeleteClerk ff = new FrmDeleteClerk(Uid);
+                ff.ShowDialog();
+                FrmPrintClerk_Load(sender, e);
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

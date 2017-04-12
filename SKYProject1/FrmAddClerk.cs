@@ -33,7 +33,8 @@ namespace SKYProject1
         {
             this.Close();
         }
-        string strCon = @"server=.\SQL2014;database=SkyProject;uid=sa;password=123";
+        //string strCon = @"server=.\SQL2014;database=SkyProject;uid=sa;password=123";
+        string strCon = @"server=DESKTOP-CBE5RT7;database=SkyProject;uid=sa;password=123";
         private void btnADD_Click(object sender, EventArgs e)
         {
             string UID = txtUid.Text.Trim();
@@ -60,6 +61,7 @@ namespace SKYProject1
                 if(rows > 0)
                 {
                     MessageBox.Show("添加成功");
+                    this.Close();
                 }
                 else
                 {
