@@ -99,6 +99,7 @@
             this.tsmiQuery.Name = "tsmiQuery";
             this.tsmiQuery.Size = new System.Drawing.Size(68, 21);
             this.tsmiQuery.Text = "查找客户";
+            this.tsmiQuery.Click += new System.EventHandler(this.tsmiQuery_Click);
             // 
             // tsmiAdd
             // 

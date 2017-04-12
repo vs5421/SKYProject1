@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace SKYProject1
 {
@@ -17,11 +19,18 @@ namespace SKYProject1
             InitializeComponent();
         }
 
+        private string myCon = ConfigurationManager.ConnectionStrings["myCon"].ConnectionString;
+
         private void FrmClient_Load(object sender, EventArgs e)
         {
 
         }
         private void ShowInformation()
+        {
+
+        }
+
+        private void tsmiQuery_Click(object sender, EventArgs e)
         {
 
         }
