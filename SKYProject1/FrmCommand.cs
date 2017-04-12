@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace SKYProject1
 {
-    public partial class FrmWareHouse : Form
+    public partial class FrmCommand : Form
     {
-        public FrmWareHouse()
+        public FrmCommand()
         {
             InitializeComponent();
         }
 
-        private void btnCommand_Click(object sender, EventArgs e)
+        private void 入库ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+              
         }
     }
 }

@@ -46,11 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommand.Designer.cs">
+      <DependentUpon>FrmCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommandDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommandDelete.Designer.cs">
+      <DependentUpon>FrmCommandDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommandInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommandInsert.Designer.cs">
+      <DependentUpon>FrmCommandInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommandOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommandOut.Designer.cs">
+      <DependentUpon>FrmCommandOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommandSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommandSelect.Designer.cs">
+      <DependentUpon>FrmCommandSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCommandUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommandUpdate.Designer.cs">
+      <DependentUpon>FrmCommandUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmShop.cs">
       <SubType>Form</SubType>
@@ -68,6 +105,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommand.resx">
+      <DependentUpon>FrmCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommandDelete.resx">
+      <DependentUpon>FrmCommandDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommandInsert.resx">
+      <DependentUpon>FrmCommandInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommandOut.resx">
+      <DependentUpon>FrmCommandOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommandSelect.resx">
+      <DependentUpon>FrmCommandSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommandUpdate.resx">
+      <DependentUpon>FrmCommandUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmShop.resx">
       <DependentUpon>FrmShop.cs</DependentUpon>

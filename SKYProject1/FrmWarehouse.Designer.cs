@@ -41,6 +41,7 @@
             this.btnCommand.TabIndex = 0;
             this.btnCommand.Text = "商品管理";
             this.btnCommand.UseVisualStyleBackColor = true;
+            this.btnCommand.Click += new System.EventHandler(this.btnCommand_Click);
             // 
             // btnKeeper
             // 
