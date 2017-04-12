@@ -21,6 +21,9 @@ namespace SKYProject1
         {
 
         }
+        private void ShowInformation()
+        {
 
+        }
     }
 }
