@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelp.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +59,18 @@
     </Compile>
     <Compile Include="FrmAddClerk.Designer.cs">
       <DependentUpon>FrmAddClerk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClient.Designer.cs">
+      <DependentUpon>FrmClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientQuery.Designer.cs">
+      <DependentUpon>frmClientQuery.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDeleteClerk.cs">
       <SubType>Form</SubType>
@@ -95,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddClerk.resx">
       <DependentUpon>FrmAddClerk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClient.resx">
+      <DependentUpon>FrmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientQuery.resx">
+      <DependentUpon>frmClientQuery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDeleteClerk.resx">
       <DependentUpon>FrmDeleteClerk.cs</DependentUpon>
