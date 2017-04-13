@@ -46,29 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAddWHKeeper.cs">
+    <Compile Include="FrmKeeperInsert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddWHKeeper.Designer.cs">
-      <DependentUpon>FrmAddWHKeeper.cs</DependentUpon>
+    <Compile Include="FrmKeeperInsert.Designer.cs">
+      <DependentUpon>FrmKeeperInsert.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDelectWHKeeper.cs">
+    <Compile Include="FrmKeeperDelect.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDelectWHKeeper.Designer.cs">
-      <DependentUpon>FrmDelectWHKeeper.cs</DependentUpon>
+    <Compile Include="FrmKeeperDelect.Designer.cs">
+      <DependentUpon>FrmKeeperDelect.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSelectKeeper.cs">
+    <Compile Include="FrmPasswordUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSelectKeeper.Designer.cs">
-      <DependentUpon>FrmSelectKeeper.cs</DependentUpon>
+    <Compile Include="FrmPasswordUpdate.Designer.cs">
+      <DependentUpon>FrmPasswordUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmShop.cs">
       <SubType>Form</SubType>
@@ -76,11 +77,11 @@
     <Compile Include="FrmShop.Designer.cs">
       <DependentUpon>FrmShop.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdateKeeper.cs">
+    <Compile Include="FrmKeeperUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdateKeeper.Designer.cs">
-      <DependentUpon>FrmUpdateKeeper.cs</DependentUpon>
+    <Compile Include="FrmKeeperUpdate.Designer.cs">
+      <DependentUpon>FrmKeeperUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmWarehouse.cs">
       <SubType>Form</SubType>
@@ -88,37 +89,37 @@
     <Compile Include="FrmWarehouse.Designer.cs">
       <DependentUpon>FrmWarehouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmWHKeeper.cs">
+    <Compile Include="FrmKeeper.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmWHKeeper.Designer.cs">
-      <DependentUpon>FrmWHKeeper.cs</DependentUpon>
+    <Compile Include="FrmKeeper.Designer.cs">
+      <DependentUpon>FrmKeeper.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAddWHKeeper.resx">
-      <DependentUpon>FrmAddWHKeeper.cs</DependentUpon>
+    <EmbeddedResource Include="FrmKeeperInsert.resx">
+      <DependentUpon>FrmKeeperInsert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDelectWHKeeper.resx">
-      <DependentUpon>FrmDelectWHKeeper.cs</DependentUpon>
+    <EmbeddedResource Include="FrmKeeperDelect.resx">
+      <DependentUpon>FrmKeeperDelect.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSelectKeeper.resx">
-      <DependentUpon>FrmSelectKeeper.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPasswordUpdate.resx">
+      <DependentUpon>FrmPasswordUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmShop.resx">
       <DependentUpon>FrmShop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdateKeeper.resx">
-      <DependentUpon>FrmUpdateKeeper.cs</DependentUpon>
+    <EmbeddedResource Include="FrmKeeperUpdate.resx">
+      <DependentUpon>FrmKeeperUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmWarehouse.resx">
       <DependentUpon>FrmWarehouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmWHKeeper.resx">
-      <DependentUpon>FrmWHKeeper.cs</DependentUpon>
+    <EmbeddedResource Include="FrmKeeper.resx">
+      <DependentUpon>FrmKeeper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

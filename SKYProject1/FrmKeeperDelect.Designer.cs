@@ -1,6 +1,6 @@
 ﻿namespace SKYProject1
 {
-    partial class FrmDelectWHKeeper
+    partial class FrmKeeperDelect
     {
         /// <summary>
         /// Required designer variable.

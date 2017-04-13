@@ -1,6 +1,6 @@
 ﻿namespace SKYProject1
 {
-    partial class FrmAddWHKeeper
+    partial class FrmKeeperInsert
     {
         /// <summary>
         /// Required designer variable.
@@ -43,8 +43,9 @@
             this.txtIDNumber = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.cboSex = new System.Windows.Forms.ComboBox();
             this.erpTest = new System.Windows.Forms.ErrorProvider(this.components);
+            this.rboMale = new System.Windows.Forms.RadioButton();
+            this.rboFeMale = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.erpTest)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,8 +118,6 @@
             this.txtUid.Name = "txtUid";
             this.txtUid.Size = new System.Drawing.Size(140, 21);
             this.txtUid.TabIndex = 7;
-            this.txtUid.Enter += new System.EventHandler(this.txtUserName_Enter);
-            this.txtUid.Leave += new System.EventHandler(this.txtUserName_Leave);
             // 
             // txtTelephone
             // 
@@ -126,8 +125,6 @@
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(140, 21);
             this.txtTelephone.TabIndex = 9;
-            this.txtTelephone.Enter += new System.EventHandler(this.txtPhoneNo_Enter);
-            this.txtTelephone.Leave += new System.EventHandler(this.txtPhoneNo_Leave);
             // 
             // txtKeeperName
             // 
@@ -135,8 +132,6 @@
             this.txtKeeperName.Name = "txtKeeperName";
             this.txtKeeperName.Size = new System.Drawing.Size(140, 21);
             this.txtKeeperName.TabIndex = 11;
-            this.txtKeeperName.Enter += new System.EventHandler(this.txtName_Enter);
-            this.txtKeeperName.Leave += new System.EventHandler(this.txtName_Leave);
             // 
             // txtPassword
             // 
@@ -144,8 +139,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(140, 21);
             this.txtPassword.TabIndex = 12;
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassWord_Enter);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassWord_Leave);
             // 
             // txtIDNumber
             // 
@@ -153,8 +146,6 @@
             this.txtIDNumber.Name = "txtIDNumber";
             this.txtIDNumber.Size = new System.Drawing.Size(140, 21);
             this.txtIDNumber.TabIndex = 13;
-            this.txtIDNumber.Enter += new System.EventHandler(this.txtCardID_Enter);
-            this.txtIDNumber.Leave += new System.EventHandler(this.txtCardID_Leave);
             // 
             // txtAddress
             // 
@@ -162,7 +153,6 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(140, 21);
             this.txtAddress.TabIndex = 14;
-            this.txtAddress.Enter += new System.EventHandler(this.txtAddress_Enter);
             // 
             // btnSave
             // 
@@ -174,28 +164,39 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // cboSex
-            // 
-            this.cboSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSex.FormattingEnabled = true;
-            this.cboSex.Items.AddRange(new object[] {
-            "男",
-            "女"});
-            this.cboSex.Location = new System.Drawing.Point(113, 135);
-            this.cboSex.Name = "cboSex";
-            this.cboSex.Size = new System.Drawing.Size(140, 20);
-            this.cboSex.TabIndex = 16;
-            // 
             // erpTest
             // 
             this.erpTest.ContainerControl = this;
             // 
-            // FrmAddWHKeeper
+            // rboMale
+            // 
+            this.rboMale.AutoSize = true;
+            this.rboMale.Location = new System.Drawing.Point(113, 138);
+            this.rboMale.Name = "rboMale";
+            this.rboMale.Size = new System.Drawing.Size(35, 16);
+            this.rboMale.TabIndex = 16;
+            this.rboMale.TabStop = true;
+            this.rboMale.Text = "男";
+            this.rboMale.UseVisualStyleBackColor = true;
+            // 
+            // rboFeMale
+            // 
+            this.rboFeMale.AutoSize = true;
+            this.rboFeMale.Location = new System.Drawing.Point(187, 138);
+            this.rboFeMale.Name = "rboFeMale";
+            this.rboFeMale.Size = new System.Drawing.Size(35, 16);
+            this.rboFeMale.TabIndex = 17;
+            this.rboFeMale.TabStop = true;
+            this.rboFeMale.Text = "女";
+            this.rboFeMale.UseVisualStyleBackColor = true;
+            // 
+            // FrmKeeperInsert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(306, 327);
-            this.Controls.Add(this.cboSex);
+            this.Controls.Add(this.rboFeMale);
+            this.Controls.Add(this.rboMale);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtIDNumber);
@@ -210,7 +211,7 @@
             this.Controls.Add(this.lblKeeperName);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUid);
-            this.Name = "FrmAddWHKeeper";
+            this.Name = "FrmKeeperInsert";
             this.Text = "增加仓管员";
             this.Load += new System.EventHandler(this.FrmAddWHKeeper_Load);
             ((System.ComponentModel.ISupportInitialize)(this.erpTest)).EndInit();
@@ -235,7 +236,8 @@
         private System.Windows.Forms.TextBox txtIDNumber;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.ComboBox cboSex;
         private System.Windows.Forms.ErrorProvider erpTest;
+        private System.Windows.Forms.RadioButton rboFeMale;
+        private System.Windows.Forms.RadioButton rboMale;
     }
 }

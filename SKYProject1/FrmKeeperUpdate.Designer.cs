@@ -1,6 +1,6 @@
 ﻿namespace SKYProject1
 {
-    partial class FrmUpdateKeeper
+    partial class FrmKeeperUpdate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboSex = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtIDNumber = new System.Windows.Forms.TextBox();
@@ -41,19 +40,9 @@
             this.lblSex = new System.Windows.Forms.Label();
             this.lblKeeperName = new System.Windows.Forms.Label();
             this.lblUid = new System.Windows.Forms.Label();
+            this.rboFeMale = new System.Windows.Forms.RadioButton();
+            this.rboMale = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
-            // 
-            // cboSex
-            // 
-            this.cboSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSex.FormattingEnabled = true;
-            this.cboSex.Items.AddRange(new object[] {
-            "男",
-            "女"});
-            this.cboSex.Location = new System.Drawing.Point(110, 96);
-            this.cboSex.Name = "cboSex";
-            this.cboSex.Size = new System.Drawing.Size(140, 20);
-            this.cboSex.TabIndex = 31;
             // 
             // btnSave
             // 
@@ -154,12 +143,35 @@
             this.lblUid.TabIndex = 17;
             this.lblUid.Text = "用户名：";
             // 
-            // FrmUpdateKeeper
+            // rboFeMale
+            // 
+            this.rboFeMale.AutoSize = true;
+            this.rboFeMale.Location = new System.Drawing.Point(184, 99);
+            this.rboFeMale.Name = "rboFeMale";
+            this.rboFeMale.Size = new System.Drawing.Size(35, 16);
+            this.rboFeMale.TabIndex = 32;
+            this.rboFeMale.TabStop = true;
+            this.rboFeMale.Text = "女";
+            this.rboFeMale.UseVisualStyleBackColor = true;
+            // 
+            // rboMale
+            // 
+            this.rboMale.AutoSize = true;
+            this.rboMale.Location = new System.Drawing.Point(110, 99);
+            this.rboMale.Name = "rboMale";
+            this.rboMale.Size = new System.Drawing.Size(35, 16);
+            this.rboMale.TabIndex = 31;
+            this.rboMale.TabStop = true;
+            this.rboMale.Text = "男";
+            this.rboMale.UseVisualStyleBackColor = true;
+            // 
+            // FrmKeeperUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(294, 336);
-            this.Controls.Add(this.cboSex);
+            this.Controls.Add(this.rboFeMale);
+            this.Controls.Add(this.rboMale);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtIDNumber);
@@ -172,8 +184,8 @@
             this.Controls.Add(this.lblSex);
             this.Controls.Add(this.lblKeeperName);
             this.Controls.Add(this.lblUid);
-            this.Name = "FrmUpdateKeeper";
-            this.Text = "FrmUpdateKeeper";
+            this.Name = "FrmKeeperUpdate";
+            this.Text = "编辑界面";
             this.Load += new System.EventHandler(this.FrmUpdateKeeper_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -181,8 +193,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cboSex;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtIDNumber;
@@ -195,5 +205,7 @@
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.Label lblKeeperName;
         private System.Windows.Forms.Label lblUid;
+        private System.Windows.Forms.RadioButton rboFeMale;
+        private System.Windows.Forms.RadioButton rboMale;
     }
 }
