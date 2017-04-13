@@ -33,5 +33,11 @@ namespace SKYProject1
             FrmWareHouse frm = new FrmWareHouse();
             frm.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Suppliers frm = new Suppliers();//供应商管理界面
+            frm.ShowDialog();
+        }
     }
 }
