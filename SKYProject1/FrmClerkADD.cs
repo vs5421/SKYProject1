@@ -12,9 +12,9 @@ using System.Text.RegularExpressions;
 
 namespace SKYProject1
 {
-    public partial class FrmAddClerk : Form
+    public partial class FrmClerkADD : Form
     {
-        public FrmAddClerk()
+        public FrmClerkADD()
         {
             InitializeComponent();
         }
@@ -34,7 +34,8 @@ namespace SKYProject1
             this.Close();
         }
         //string strCon = @"server=.\SQL2014;database=SkyProject;uid=sa;password=123";
-        string strCon = @"server=DESKTOP-CBE5RT7;database=SkyProject;uid=sa;password=123";
+        //string strCon = @"server=DESKTOP-CBE5RT7;database=SkyProject;uid=sa;password=123";
+        DBHelp helper = new DBHelp();
         private void btnADD_Click(object sender, EventArgs e)
         {
             string UID = txtUid.Text.Trim();
@@ -46,29 +47,38 @@ namespace SKYProject1
             string Address = txtAddress.Text.Trim();
             string strSQL = "insert into Clerk(Uid,Password,ClerkName,sex,TelePhone,IDNumber,Address)" +
                 " values(@Uid,@Password,@ClerkName,@sex,@TelePhone,@IDNumber,@Address)";
-            using (SqlConnection con = new SqlConnection(strCon))
+            int rows = helper.ExecuteNonQuery(strSQL, CommandType.Text,
+               new SqlParameter("@Uid", UID),
+               new SqlParameter("@Password", Password),
+               new SqlParameter("@ClerkName", ClerkName),
+               new SqlParameter("@sex", Sex),
+               new SqlParameter("@TelePhone", Telephone),
+               new SqlParameter("@IDNumber", IDNumber),
+               new SqlParameter("@Address", Address)
+           );
+            //using (SqlConnection con = new SqlConnection(strCon))
+            //{
+            //    SqlCommand cmd = new SqlCommand(strSQL, con);
+            //    con.Open();
+            //    cmd.Parameters.AddWithValue("@Uid", UID);
+            //    cmd.Parameters.AddWithValue("@Password", Password);
+            //    cmd.Parameters.AddWithValue("@ClerkName", ClerkName);
+            //    cmd.Parameters.AddWithValue("@sex", Sex);
+            //    cmd.Parameters.AddWithValue("@TelePhone", Telephone);
+            //    cmd.Parameters.AddWithValue("@IDNumber", IDNumber);
+            //    cmd.Parameters.AddWithValue("@Address", Address);
+            //    int rows = cmd.ExecuteNonQuery();
+            if (rows > 0)
             {
-                SqlCommand cmd = new SqlCommand(strSQL, con);
-                con.Open();
-                cmd.Parameters.AddWithValue("@Uid", UID);
-                cmd.Parameters.AddWithValue("@Password", Password);
-                cmd.Parameters.AddWithValue("@ClerkName", ClerkName);
-                cmd.Parameters.AddWithValue("@sex", Sex);
-                cmd.Parameters.AddWithValue("@TelePhone", Telephone);
-                cmd.Parameters.AddWithValue("@IDNumber", IDNumber);
-                cmd.Parameters.AddWithValue("@Address", Address);
-                int rows = cmd.ExecuteNonQuery();
-                if(rows > 0)
-                {
-                    MessageBox.Show("添加成功");
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("添加失败");
-                }
-                con.Close();
+                MessageBox.Show("添加成功");
+                this.Close();
             }
+            else
+            {
+                MessageBox.Show("添加失败");
+            }
+            //    con.Close();
+            //}
         }
 
         private void txtUid_Leave(object sender, EventArgs e)

@@ -68,18 +68,18 @@ namespace SKYProject1
                 {
                     this.cmd.Parameters.Add(item);
                 }
-                this.con.Open();
-                rows = this.cmd.ExecuteNonQuery();
+                con.Open();
+                rows = cmd.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
             finally
             {
-                this.con.Close();
+               con.Close();
             }
-
+            
             return rows;
         }
         public async Task<int> ExecuteNonQueryAsync(string strSQL, CommandType commandType = CommandType.Text, params SqlParameter[] parameters)
