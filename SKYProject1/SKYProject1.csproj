@@ -60,6 +60,12 @@
     <Compile Include="FrmClerkADD.Designer.cs">
       <DependentUpon>FrmClerkADD.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmClerkModifyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClerkModifyPassword.Designer.cs">
+      <DependentUpon>FrmClerkModifyPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClerkADD.resx">
       <DependentUpon>FrmClerkADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClerkModifyPassword.resx">
+      <DependentUpon>FrmClerkModifyPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClient.resx">
       <DependentUpon>FrmClient.cs</DependentUpon>

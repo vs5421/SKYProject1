@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace SKYProject1
 {
@@ -45,11 +46,13 @@ namespace SKYProject1
             //    SqlDataReader reader = cmd.ExecuteReader();
             if (reader.Read())
             {
+               
                 string ClerkName = reader.GetString(reader.GetOrdinal("ClerkName"));
                 string sex = reader.GetString(reader.GetOrdinal("sex"));
                 string TelePhone = reader.GetString(reader.GetOrdinal("TelePhone"));
                 string IDNumber = reader.GetString(reader.GetOrdinal("IDNumber"));
                 string Address = reader.GetString(reader.GetOrdinal("Address"));
+              
                 this.txtUid.Text = Uid;
                 this.txtClerkName.Text = ClerkName;
                 if (sex == "男")
@@ -79,6 +82,37 @@ namespace SKYProject1
             string Telephone = txtTelephone.Text.Trim();
             string IDNumber = txtIDNumber.Text.Trim();
             string Address = txtAddress.Text.Trim();
+            this.errorProvider1.Clear();
+            if (Regex.IsMatch(txtUid.Text.Trim(), @"^[ ]*$") == true)
+            {
+                this.errorProvider1.SetError(txtUid, "不能空！");
+                this.txtUid.Focus();
+                return;
+            }
+            if (Regex.IsMatch(txtClerkName.Text.Trim(), @"^[ ]*$") == true)
+            {
+                this.errorProvider1.SetError(txtClerkName, "不能空！");
+                this.txtClerkName.Focus();
+                return;
+            }
+            if (Regex.IsMatch(txtTelephone.Text.Trim(), @"^[\d]{11}$") == false)
+            {
+                this.errorProvider1.SetError(txtTelephone, "手机号码输入不规范！");
+                this.txtTelephone.Focus();
+                return;
+            }
+            if (Regex.IsMatch(txtIDNumber.Text.Trim(), @"(^[\d]{18}$)|(^[\d]{17}[X]$)") == false)
+            {
+                this.errorProvider1.SetError(txtIDNumber, "身份证号码输入不规范！");
+                this.txtIDNumber.Focus();
+                return;
+            }
+            if (Regex.IsMatch(txtAddress.Text.Trim(), @"^[ ]*$") == true)
+            {
+                this.errorProvider1.SetError(txtAddress, "不能空！");
+                this.txtAddress.Focus();
+                return;
+            }
             string strSQL = "update clerk set ClerkName=@ClerkName,Sex=@Sex,Telephone=@Telephone,IDNumber=@IDNumber,Address=@Address where Uid=@Uid";
             int rows = helper.ExecuteNonQuery(strSQL, CommandType.Text,
                   new SqlParameter("@Uid", Uid),
