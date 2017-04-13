@@ -28,10 +28,10 @@ namespace SKYProject1
             IDataReader reader = helper.ExecuteReaderAsync(strSql).Result;
             while(reader.Read())
             {
-                ListViewItem i = new ListViewItem();
-                i.SubItems.Add(reader["SupplierNo"].ToString());
+                ListViewItem i = new ListViewItem(reader["SupplierNo"].ToString());
                 i.SubItems.Add(reader["SupplierName"].ToString());
                 i.SubItems.Add(reader["Telephone"].ToString());
+                i.Tag = reader["SupplierNo"].ToString();
                 lvSupplierShow.Items.Add(i);
             }
             reader.Close();
@@ -40,7 +40,8 @@ namespace SKYProject1
 
         private void 添加一个新的供应商ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            SuppliersAdd frm = new SuppliersAdd();
+            frm.ShowDialog();
         }
 
         private void Suppliers_FormClosing(object sender, FormClosingEventArgs e)
@@ -48,5 +49,36 @@ namespace SKYProject1
 
         }
 
+        private void 删除一个旧的供应商ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuppliersDelete frm = new SuppliersDelete();
+            frm.ShowDialog();
+        }
+
+        private void 修改一个旧的供应商ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 增加一个供应商ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuppliersAdd frm = new SuppliersAdd();
+            frm.ShowDialog();
+        }
+
+        private void 删除供应商ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(lvSupplierShow.SelectedItems.Count<=0)
+            {
+                SuppliersDelete frm = new SuppliersDelete();
+                frm.ShowDialog();
+            }
+            else
+            {
+                SuppliersDelete frm = new SuppliersDelete(lvSupplierShow.SelectedItems[0].SubItems[0].Text);
+                frm.ShowDialog();
+            }
+            
+        }
     }
 }

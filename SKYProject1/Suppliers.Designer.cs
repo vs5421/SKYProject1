@@ -68,12 +68,14 @@
             this.增加一个供应商ToolStripMenuItem.Name = "增加一个供应商ToolStripMenuItem";
             this.增加一个供应商ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.增加一个供应商ToolStripMenuItem.Text = "增加一个供应商";
+            this.增加一个供应商ToolStripMenuItem.Click += new System.EventHandler(this.增加一个供应商ToolStripMenuItem_Click);
             // 
             // 删除供应商ToolStripMenuItem
             // 
             this.删除供应商ToolStripMenuItem.Name = "删除供应商ToolStripMenuItem";
             this.删除供应商ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.删除供应商ToolStripMenuItem.Text = "删除供应商";
+            this.删除供应商ToolStripMenuItem.Click += new System.EventHandler(this.删除供应商ToolStripMenuItem_Click);
             // 
             // 修改供应商ToolStripMenuItem
             // 
@@ -106,12 +108,14 @@
             this.删除一个旧的供应商ToolStripMenuItem.Name = "删除一个旧的供应商ToolStripMenuItem";
             this.删除一个旧的供应商ToolStripMenuItem.Size = new System.Drawing.Size(128, 21);
             this.删除一个旧的供应商ToolStripMenuItem.Text = "删除一个旧的供应商";
+            this.删除一个旧的供应商ToolStripMenuItem.Click += new System.EventHandler(this.删除一个旧的供应商ToolStripMenuItem_Click);
             // 
             // 修改一个旧的供应商ToolStripMenuItem
             // 
             this.修改一个旧的供应商ToolStripMenuItem.Name = "修改一个旧的供应商ToolStripMenuItem";
             this.修改一个旧的供应商ToolStripMenuItem.Size = new System.Drawing.Size(128, 21);
             this.修改一个旧的供应商ToolStripMenuItem.Text = "修改一个旧的供应商";
+            this.修改一个旧的供应商ToolStripMenuItem.Click += new System.EventHandler(this.修改一个旧的供应商ToolStripMenuItem_Click);
             // 
             // 查询一个旧的供应商ToolStripMenuItem
             // 
@@ -125,6 +129,7 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.lvSupplierShow.ContextMenuStrip = this.contextMenuStrip1;
             this.lvSupplierShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvSupplierShow.FullRowSelect = true;
             this.lvSupplierShow.Location = new System.Drawing.Point(0, 25);
