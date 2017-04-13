@@ -16,7 +16,7 @@ namespace SKYProject1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmWHKeeper());
+            Application.Run(new Form1());
         }
     }
 }
