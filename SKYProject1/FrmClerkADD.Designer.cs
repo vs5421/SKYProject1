@@ -122,7 +122,7 @@
             this.txtUid.Name = "txtUid";
             this.txtUid.Size = new System.Drawing.Size(145, 21);
             this.txtUid.TabIndex = 7;
-            this.txtUid.Leave += new System.EventHandler(this.txtUid_Leave);
+           
             // 
             // txtPassword
             // 
@@ -132,7 +132,7 @@
             this.txtPassword.Size = new System.Drawing.Size(145, 21);
             this.txtPassword.TabIndex = 8;
             this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
+          
             // 
             // label8
             // 
@@ -150,7 +150,7 @@
             this.txtPasswordss.PasswordChar = '*';
             this.txtPasswordss.Size = new System.Drawing.Size(145, 21);
             this.txtPasswordss.TabIndex = 10;
-            this.txtPasswordss.Leave += new System.EventHandler(this.txtPasswordss_Leave);
+          
             // 
             // txtClerkName
             // 
@@ -158,7 +158,7 @@
             this.txtClerkName.Name = "txtClerkName";
             this.txtClerkName.Size = new System.Drawing.Size(145, 21);
             this.txtClerkName.TabIndex = 11;
-            this.txtClerkName.Leave += new System.EventHandler(this.txtClerkName_Leave);
+            
             // 
             // rabMan
             // 
@@ -189,7 +189,7 @@
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(145, 21);
             this.txtTelephone.TabIndex = 14;
-            this.txtTelephone.Leave += new System.EventHandler(this.txtTelephone_Leave);
+            
             // 
             // txtIDNumber
             // 
@@ -197,7 +197,7 @@
             this.txtIDNumber.Name = "txtIDNumber";
             this.txtIDNumber.Size = new System.Drawing.Size(145, 21);
             this.txtIDNumber.TabIndex = 15;
-            this.txtIDNumber.Leave += new System.EventHandler(this.txtIDNumber_Leave);
+           
             // 
             // txtAddress
             // 
@@ -205,7 +205,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(145, 21);
             this.txtAddress.TabIndex = 16;
-            this.txtAddress.Leave += new System.EventHandler(this.txtAddress_Leave);
+            
             // 
             // btnExit
             // 
