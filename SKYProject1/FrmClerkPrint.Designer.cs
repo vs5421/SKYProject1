@@ -98,7 +98,7 @@
             this.修改ToolStripMenuItem,
             this.删除ToolStripMenuItem});
             this.cmsMenu.Name = "cmsMenu";
-            this.cmsMenu.Size = new System.Drawing.Size(101, 48);
+            this.cmsMenu.Size = new System.Drawing.Size(153, 70);
             // 
             // 修改ToolStripMenuItem
             // 
@@ -106,7 +106,7 @@
             this.修改详细信息ToolStripMenuItem,
             this.修改密码ToolStripMenuItem});
             this.修改ToolStripMenuItem.Name = "修改ToolStripMenuItem";
-            this.修改ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.修改ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.修改ToolStripMenuItem.Text = "修改";
             // 
             // 修改详细信息ToolStripMenuItem
@@ -119,8 +119,9 @@
             // 修改密码ToolStripMenuItem
             // 
             this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.修改密码ToolStripMenuItem.Text = "修改密码";
+            this.修改密码ToolStripMenuItem.Click += new System.EventHandler(this.修改密码ToolStripMenuItem_Click);
             // 
             // 删除ToolStripMenuItem
             // 

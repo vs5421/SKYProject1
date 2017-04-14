@@ -91,5 +91,16 @@ namespace SKYProject1
             }
             reader.Close();
         }
+
+        private void 修改密码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string Uid = listView1.SelectedItems[0].Tag.ToString();
+            if (Uid != null)
+            {
+                FrmClerkModifyPassword f = new FrmClerkModifyPassword(Uid);
+                f.ShowDialog();
+                btnQuery.PerformClick();
+            }
+        }
     }
 }
