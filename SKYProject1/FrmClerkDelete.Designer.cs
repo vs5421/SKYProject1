@@ -1,6 +1,6 @@
 ﻿namespace SKYProject1
 {
-    partial class FrmDeleteClerk
+    partial class FrmClerkDelete
     {
         /// <summary>
         /// Required designer variable.
@@ -52,6 +52,7 @@
             this.btnModify.TabIndex = 52;
             this.btnModify.Text = "删除";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnExit
             // 
@@ -61,6 +62,7 @@
             this.btnExit.TabIndex = 51;
             this.btnExit.Text = "退出";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label7
             // 
@@ -191,6 +193,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmDeleteClerk";
             this.Text = "删除店员信息";
+            this.Load += new System.EventHandler(this.FrmDeleteClerk_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

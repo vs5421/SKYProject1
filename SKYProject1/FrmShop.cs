@@ -19,10 +19,19 @@ namespace SKYProject1
 
         private void btnClerk_Click(object sender, EventArgs e)
         {
-            FrmPrintClerk f = new FrmPrintClerk();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TSMIClerkManagement_Click(object sender, EventArgs e)
+        {
+            FrmClerkPrint f = new FrmClerkPrint();
+            f.MdiParent = this;
+            f.Show();
         }
     }
 }
