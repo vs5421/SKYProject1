@@ -1,6 +1,6 @@
 ﻿namespace SKYProject1
 {
-    partial class frmModify
+    partial class frmSuppliersModify
     {
         /// <summary>
         /// Required designer variable.

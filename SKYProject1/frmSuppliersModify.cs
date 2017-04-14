@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace SKYProject1
 {
-    public partial class frmModify : Form
+    public partial class frmSuppliersModify : Form
     {
         string strSql = null;
         DBhelper helper = new DBhelper();
-        public frmModify()
+        public frmSuppliersModify()
         {
             InitializeComponent();
             SuppliersShowID();
         }
-        public frmModify(string id)
+        public frmSuppliersModify(string id)
         {
             InitializeComponent();
             SuppliersShowID();

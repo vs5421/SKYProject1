@@ -66,11 +66,11 @@
     <Compile Include="FrmDeleteClerk.Designer.cs">
       <DependentUpon>FrmDeleteClerk.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmModify.cs">
+    <Compile Include="frmSuppliersModify.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmModify.Designer.cs">
-      <DependentUpon>frmModify.cs</DependentUpon>
+    <Compile Include="frmSuppliersModify.Designer.cs">
+      <DependentUpon>frmSuppliersModify.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmModifyClerk.cs">
       <SubType>Form</SubType>
@@ -125,8 +125,8 @@
     <EmbeddedResource Include="FrmDeleteClerk.resx">
       <DependentUpon>FrmDeleteClerk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmModify.resx">
-      <DependentUpon>frmModify.cs</DependentUpon>
+    <EmbeddedResource Include="frmSuppliersModify.resx">
+      <DependentUpon>frmSuppliersModify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModifyClerk.resx">
       <DependentUpon>FrmModifyClerk.cs</DependentUpon>

@@ -57,7 +57,7 @@ namespace SKYProject1
 
         private void 修改一个旧的供应商ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmModify frm = new frmModify();
+            frmSuppliersModify frm = new frmSuppliersModify();
             frm.ShowDialog();
         }
 
@@ -91,13 +91,13 @@ namespace SKYProject1
         {
             if (lvSupplierShow.SelectedItems.Count <= 0)
             {
-                frmModify frm = new frmModify();
+                frmSuppliersModify frm = new frmSuppliersModify();
                 frm.ShowDialog();
             }
             else
             {
 
-                frmModify frm = new frmModify(lvSupplierShow.SelectedItems[0].SubItems[0].Text);
+                frmSuppliersModify frm = new frmSuppliersModify(lvSupplierShow.SelectedItems[0].SubItems[0].Text);
                 frm.ShowDialog();
             }
 
