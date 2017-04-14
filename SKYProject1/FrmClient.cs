@@ -20,19 +20,36 @@ namespace SKYProject1
         }
 
         private string myCon = ConfigurationManager.ConnectionStrings["myCon"].ConnectionString;
-        
+        DBHelp helper = new DBHelp();
 
         private void FrmClient_Load(object sender, EventArgs e)
         {
-
+            ShowInformation();
         }
-        private void ShowInformation()
+        private async void ShowInformation()
         {
 
+            string strSql = "select ClientNo,ClientName,Sex,Telephone from Client";
+            SqlDataReader reader = await helper.ExecuteReaderAsync(strSql, CommandType.Text);
+            this.listView1.Items.Clear();
+            while (reader.Read())
+            {
+                ListViewItem item = new ListViewItem(reader.GetString(reader.GetOrdinal("ClientNo")));
+                item.SubItems.Add(reader.GetString(reader.GetOrdinal("ClientName")));
+                item.SubItems.Add(reader.GetString(reader.GetOrdinal("Sex")));
+                item.SubItems.Add(reader.GetString(reader.GetOrdinal("Telephone")));
+                listView1.Items.Add(item);
+            }
+            reader.Close();
         }
-
+        frmClientQuery fQuery;
         private void tsmiQuery_Click(object sender, EventArgs e)
         {
+            fQuery = null;
+
+            fQuery = new frmClientQuery(this);
+
+            fQuery.Show();
 
         }
     }

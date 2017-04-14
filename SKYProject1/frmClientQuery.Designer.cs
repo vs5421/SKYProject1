@@ -62,7 +62,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(16, 79);
+            this.lblName.Location = new System.Drawing.Point(16, 71);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(41, 12);
             this.lblName.TabIndex = 6;
@@ -71,7 +71,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(16, 170);
+            this.lblPhone.Location = new System.Drawing.Point(16, 158);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(65, 12);
             this.lblPhone.TabIndex = 8;
@@ -86,14 +86,14 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(95, 76);
+            this.txtName.Location = new System.Drawing.Point(95, 68);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(121, 21);
             this.txtName.TabIndex = 1;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(95, 167);
+            this.txtPhone.Location = new System.Drawing.Point(95, 155);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(121, 21);
             this.txtPhone.TabIndex = 3;
@@ -101,7 +101,7 @@
             // lblSex
             // 
             this.lblSex.AutoSize = true;
-            this.lblSex.Location = new System.Drawing.Point(16, 126);
+            this.lblSex.Location = new System.Drawing.Point(16, 115);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(41, 12);
             this.lblSex.TabIndex = 7;
@@ -113,7 +113,7 @@
             this.cboSex.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.cboSex.Location = new System.Drawing.Point(95, 123);
+            this.cboSex.Location = new System.Drawing.Point(95, 112);
             this.cboSex.Name = "cboSex";
             this.cboSex.Size = new System.Drawing.Size(121, 20);
             this.cboSex.TabIndex = 2;
@@ -145,6 +145,7 @@
             this.Controls.Add(this.lblNo);
             this.Controls.Add(this.btnQuery);
             this.Name = "frmClientQuery";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "查询客户信息";
             this.ResumeLayout(false);
             this.PerformLayout();
