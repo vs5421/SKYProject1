@@ -28,22 +28,33 @@ namespace SKYProject1
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string strSql = "insert into Client(ClientNo,ClientName,Sex,Telephone) values(@ClientNo,@ClientName,@Sex,@TelePhone)";
-            //将数据库里受影响的行数返回出来
-            int rows= helper.ExecuteNonQuery(strSql,CommandType.Text,
-                new SqlParameter("@ClientNo",this.txtNo.Text),
-                new SqlParameter("@ClientName",this.txtName.Text),
-                new SqlParameter("@Sex",this.cboSex.Text),
-                new SqlParameter("@TelePhone",this.txtPhone.Text)
+            string strSql = "select ClientNo from Client where ClientNo=@ClientNo";
+            object obj = helper.ExecuteScalar(strSql, CommandType.Text,
+                new SqlParameter("@ClientNo", this.txtNo.Text)
                 );
-            //如果受影响的函数大于0，则显示添加成功
-            if(rows>0)
+            if (obj != null)
             {
-                MessageBox.Show("添加成功！");
-                this.Close();
+                errorProvider1.SetError(this.txtNo, "已存在相同的编号");
             }
             else
-                MessageBox.Show("添加失败！");
+            {
+                strSql = "insert into Client(ClientNo,ClientName,Sex,Telephone) values(@ClientNo,@ClientName,@Sex,@TelePhone)";
+                //将数据库里受影响的行数返回出来
+               int rows = helper.ExecuteNonQuery(strSql, CommandType.Text,
+                    new SqlParameter("@ClientNo", this.txtNo.Text),
+                    new SqlParameter("@ClientName", this.txtName.Text),
+                    new SqlParameter("@Sex", this.cboSex.Text),
+                    new SqlParameter("@TelePhone", this.txtPhone.Text)
+                    );
+                //如果受影响的函数大于0，则显示添加成功
+                if (rows > 0)
+                {
+                    MessageBox.Show("添加成功！");
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("添加失败！");
+            }
         }
 
         private void frmClientAdd_Load(object sender, EventArgs e)

@@ -55,6 +55,7 @@
             this.columnHeader3,
             this.columnHeader5});
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
+            this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(1, 28);
             this.listView1.MultiSelect = false;
@@ -67,6 +68,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "编号";
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
@@ -100,8 +102,9 @@
             // tsmiDelete
             // 
             this.tsmiDelete.Name = "tsmiDelete";
-            this.tsmiDelete.Size = new System.Drawing.Size(100, 22);
+            this.tsmiDelete.Size = new System.Drawing.Size(152, 22);
             this.tsmiDelete.Text = "删除";
+            this.tsmiDelete.Click += new System.EventHandler(this.tsmiDelete_Click);
             // 
             // menuStrip1
             // 

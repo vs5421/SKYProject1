@@ -28,7 +28,6 @@ namespace SKYProject1
         }
         private async void ShowInformation()
         {
-
             string strSql = "select ClientNo,ClientName,Sex,Telephone from Client";
             SqlDataReader reader = await helper.ExecuteReaderAsync(strSql, CommandType.Text);
             this.listView1.Items.Clear();
@@ -42,6 +41,7 @@ namespace SKYProject1
             }
             reader.Close();
         }
+        //查询客户信息
         frmClientQuery fQuery;
         private void tsmiQuery_Click(object sender, EventArgs e)
         {
@@ -49,7 +49,7 @@ namespace SKYProject1
             fQuery = new frmClientQuery(this);
             fQuery.Show();
         }
-
+        //增加客户信息
         frmClientAdd fAdd;
         private void tsmiAdd_Click(object sender, EventArgs e)
         {
@@ -57,6 +57,17 @@ namespace SKYProject1
             fAdd = new frmClientAdd();
             fAdd.Show();
             //添加完数据后重新显示一遍
+            ShowInformation();
+        }
+        //删除客户信息
+        FrmClientDelete fDelete;
+        private void tsmiDelete_Click(object sender, EventArgs e)
+        {
+            //获取选中项的客户编号
+            string ClientNo=listView1.SelectedItems[0].Text;
+            fDelete = null;
+            fDelete = new FrmClientDelete(ClientNo);
+            fDelete.ShowDialog();
             ShowInformation();
         }
     }
