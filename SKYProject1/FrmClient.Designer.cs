@@ -126,6 +126,7 @@
             this.tsmiAdd.Name = "tsmiAdd";
             this.tsmiAdd.Size = new System.Drawing.Size(68, 21);
             this.tsmiAdd.Text = "增加客户";
+            this.tsmiAdd.Click += new System.EventHandler(this.tsmiAdd_Click);
             // 
             // FrmClient
             // 

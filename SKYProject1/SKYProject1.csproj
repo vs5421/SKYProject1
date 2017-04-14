@@ -66,6 +66,12 @@
     <Compile Include="FrmClient.Designer.cs">
       <DependentUpon>FrmClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmClientAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientAdd.Designer.cs">
+      <DependentUpon>frmClientAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmClientQuery.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClient.resx">
       <DependentUpon>FrmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientAdd.resx">
+      <DependentUpon>frmClientAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientQuery.resx">
       <DependentUpon>frmClientQuery.cs</DependentUpon>

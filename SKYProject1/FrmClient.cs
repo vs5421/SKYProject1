@@ -46,11 +46,18 @@ namespace SKYProject1
         private void tsmiQuery_Click(object sender, EventArgs e)
         {
             fQuery = null;
-
             fQuery = new frmClientQuery(this);
-
             fQuery.Show();
+        }
 
+        frmClientAdd fAdd;
+        private void tsmiAdd_Click(object sender, EventArgs e)
+        {
+            fAdd = null;
+            fAdd = new frmClientAdd();
+            fAdd.Show();
+            //添加完数据后重新显示一遍
+            ShowInformation();
         }
     }
 }
