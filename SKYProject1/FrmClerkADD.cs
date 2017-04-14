@@ -35,7 +35,7 @@ namespace SKYProject1
         }
         //string strCon = @"server=.\SQL2014;database=SkyProject;uid=sa;password=123";
         //string strCon = @"server=DESKTOP-CBE5RT7;database=SkyProject;uid=sa;password=123";
-        DBHelp helper = new DBHelp();
+        DBHelper helper = new DBHelper();
         private void btnADD_Click(object sender, EventArgs e)
         {
             string UID = txtUid.Text.Trim();

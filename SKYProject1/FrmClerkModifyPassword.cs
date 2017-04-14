@@ -24,7 +24,7 @@ namespace SKYProject1
             this.Uid = Uid;
         }
         string Uid;
-        DBHelp helper = new DBHelp();
+        DBHelper helper = new DBHelper();
 
         private void btnExit_Click(object sender, EventArgs e)
         {
