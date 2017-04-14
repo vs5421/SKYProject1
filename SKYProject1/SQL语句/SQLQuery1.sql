@@ -224,7 +224,11 @@ add constraint PK_OutputID
  go
 
 
-
+ declare @SupplierNo char(10),@SupplierName char(10),@Telephone char(10)
+ set @SupplierNo='22'
+ set @SupplierName ='22'
+ set @Telephone = '22'
+ insert into Supplier select @SupplierNo,@SupplierName,@Telephone
 
 
 
