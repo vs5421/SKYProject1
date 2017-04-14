@@ -124,7 +124,8 @@ namespace SKYProject1
 
         private void 送货单管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            DeliveryNote frm = new DeliveryNote();
+            frm.ShowDialog();
         }
     }
 }
