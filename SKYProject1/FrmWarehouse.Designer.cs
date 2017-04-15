@@ -109,14 +109,12 @@
             this.ManageKeeperTSMI.Name = "ManageKeeperTSMI";
             this.ManageKeeperTSMI.Size = new System.Drawing.Size(152, 22);
             this.ManageKeeperTSMI.Text = "仓管员管理";
-            this.ManageKeeperTSMI.Click += new System.EventHandler(this.ManageKeeperTSMI_Click);
             // 
             // UpdatePasswordTSMI
             // 
             this.UpdatePasswordTSMI.Name = "UpdatePasswordTSMI";
             this.UpdatePasswordTSMI.Size = new System.Drawing.Size(152, 22);
             this.UpdatePasswordTSMI.Text = "修改密码";
-            this.UpdatePasswordTSMI.Click += new System.EventHandler(this.UpdatePasswordTSMI_Click);
             // 
             // SupplierTSMI
             // 

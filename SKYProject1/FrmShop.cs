@@ -27,11 +27,5 @@ namespace SKYProject1
 
         }
 
-        private void TSMIClerkManagement_Click(object sender, EventArgs e)
-        {
-            FrmClerkPrint f = new FrmClerkPrint();
-            f.MdiParent = this;
-            f.Show();
-        }
     }
 }

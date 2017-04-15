@@ -71,7 +71,6 @@
             this.ClerkTSMI.Name = "ClerkTSMI";
             this.ClerkTSMI.Size = new System.Drawing.Size(152, 22);
             this.ClerkTSMI.Text = "店员";
-            this.ClerkTSMI.Click += new System.EventHandler(this.TSMIClerkManagement_Click);
             // 
             // ClientTSMI
             // 

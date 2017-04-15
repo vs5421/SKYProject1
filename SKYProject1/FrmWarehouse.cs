@@ -32,19 +32,5 @@ namespace SKYProject1
         {
 
         }
-
-        private void ManageKeeperTSMI_Click(object sender, EventArgs e)
-        {
-            FrmKeeper fk = new FrmKeeper();
-            fk.MdiParent = this;
-            fk.Show();
-        }
-
-        private void UpdatePasswordTSMI_Click(object sender, EventArgs e)
-        {
-            FrmPasswordUpdate fpu = new FrmPasswordUpdate();
-            fpu.MdiParent = this;
-            fpu.Show();
-        }
     }
 }
