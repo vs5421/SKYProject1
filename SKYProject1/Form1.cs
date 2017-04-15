@@ -39,5 +39,11 @@ namespace SKYProject1
             Suppliers frm = new Suppliers();//供应商管理界面
             frm.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DeliveryNote frm = new DeliveryNote();
+            frm.ShowDialog();
+        }
     }
 }

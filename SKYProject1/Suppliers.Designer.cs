@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.送货单管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.增加一个供应商ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除供应商ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.修改供应商ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,19 +55,11 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.送货单管理ToolStripMenuItem,
             this.增加一个供应商ToolStripMenuItem,
             this.删除供应商ToolStripMenuItem,
             this.修改供应商ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 114);
-            // 
-            // 送货单管理ToolStripMenuItem
-            // 
-            this.送货单管理ToolStripMenuItem.Name = "送货单管理ToolStripMenuItem";
-            this.送货单管理ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.送货单管理ToolStripMenuItem.Text = "送货单管理";
-            this.送货单管理ToolStripMenuItem.Click += new System.EventHandler(this.送货单管理ToolStripMenuItem_Click);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 92);
             // 
             // 增加一个供应商ToolStripMenuItem
             // 
@@ -243,7 +234,6 @@
 
         #endregion
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 送货单管理ToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 添加一个新的供应商ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 删除一个旧的供应商ToolStripMenuItem;

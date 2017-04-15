@@ -60,6 +60,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDeliveryNoteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeliveryNoteAdd.Designer.cs">
+      <DependentUpon>frmDeliveryNoteAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSuppliersModify.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeliveryNoteAdd.resx">
+      <DependentUpon>frmDeliveryNoteAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuppliersModify.resx">
       <DependentUpon>frmSuppliersModify.cs</DependentUpon>

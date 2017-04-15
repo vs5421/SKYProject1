@@ -18,11 +18,12 @@ namespace SKYProject1
         {
             InitializeComponent();
             SuppliersShowID();
+            Show();
         }
         //显示出供应商ID
         private void SuppliersShowID()
         {
-            strSql = "select SupplierNo from Supplier";
+            strSql = "select Uid from Keeper";
             IDataReader reader = helper.ExecuteReaderAsync(strSql, CommandType.Text).Result;
             while (reader.Read())
             {
@@ -30,20 +31,12 @@ namespace SKYProject1
             }
             reader.Close();
         }
-        private void cmbSuppliersID_TextChanged(object sender, EventArgs e)
+        private void Show()
         {
-            string strSql = "select * from Supplier where SupplierNo=@SupplierNo";
-            IDataReader reader = helper.ExecuteReaderAsync(strSql, CommandType.Text, new System.Data.SqlClient.SqlParameter("@SupplierNo", cmbSuppliersID.Text)).Result;
-            if (reader.Read())
-            {
-                label3.Text = "供货商编号：" + reader["SupplierNo"] + "\n" + "联系人姓名：" + reader["SupplierName"] + "\n" + "联系电话：" + reader["Telephone"];
-            }
-            reader.Close();
-
             lvwShow.Items.Clear();
-            strSql = "select * from Purchase where SupplierNo = @SupplierNo or @SupplierNo = ''";
-            reader = helper.ExecuteReaderAsync(strSql, CommandType.Text
-                , new System.Data.SqlClient.SqlParameter("@SupplierNo", cmbSuppliersID.Text.Trim())).Result;
+            strSql = "select * from Purchase where Uid = @Uid or @Uid = ''";
+            IDataReader reader = helper.ExecuteReaderAsync(strSql, CommandType.Text
+                , new System.Data.SqlClient.SqlParameter("@Uid", cmbSuppliersID.Text.Trim())).Result;
             while (reader.Read())
             {
                 ListViewItem i = new ListViewItem(reader["PurchaseID"].ToString());
@@ -56,6 +49,16 @@ namespace SKYProject1
                 lvwShow.Items.Add(i);
             }
             reader.Close();
+        }
+        private void cmbSuppliersID_TextChanged(object sender, EventArgs e)
+        {
+            Show();
+        }
+
+        private void btnDelivery_Click(object sender, EventArgs e)
+        {
+            frmStockAdd frm = new frmStockAdd(cmbSuppliersID.Text);
+            frm.ShowDialog();
         }
     }
 }
