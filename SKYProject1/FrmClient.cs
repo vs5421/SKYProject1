@@ -42,19 +42,19 @@ namespace SKYProject1
             reader.Close();
         }
         //查询客户信息
-        frmClientQuery fQuery;
+        FrmClientQuery fQuery;
         private void tsmiQuery_Click(object sender, EventArgs e)
         {
             fQuery = null;
-            fQuery = new frmClientQuery(this);
+            fQuery = new FrmClientQuery(this);
             fQuery.Show();
         }
         //增加客户信息
-        frmClientAdd fAdd;
+        FrmClientAdd fAdd;
         private void tsmiAdd_Click(object sender, EventArgs e)
         {
             fAdd = null;
-            fAdd = new frmClientAdd();
+            fAdd = new FrmClientAdd();
             fAdd.Show();
             //添加完数据后重新显示一遍
             ShowInformation();

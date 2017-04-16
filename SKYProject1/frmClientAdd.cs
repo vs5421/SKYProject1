@@ -12,9 +12,9 @@ using System.Configuration;
 
 namespace SKYProject1
 {
-    public partial class frmClientAdd : Form
+    public partial class FrmClientAdd : Form
     {
-        public frmClientAdd()
+        public FrmClientAdd()
         {
             InitializeComponent();
         }

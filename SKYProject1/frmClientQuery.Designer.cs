@@ -1,6 +1,6 @@
 ﻿namespace SKYProject1
 {
-    partial class frmClientQuery
+    partial class FrmClientQuery
     {
         /// <summary>
         /// Required designer variable.

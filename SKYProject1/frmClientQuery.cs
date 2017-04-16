@@ -13,14 +13,14 @@ using System.Configuration;
 
 namespace SKYProject1
 {
-    public partial class frmClientQuery : Form
+    public partial class FrmClientQuery : Form
     {
-        public frmClientQuery()
+        public FrmClientQuery()
         {
             InitializeComponent();
         }
         //将Client窗体传入进来，让子窗体能够控制父窗体
-        public frmClientQuery(FrmClient frmClient)
+        public FrmClientQuery(FrmClient frmClient)
         {
             InitializeComponent();
             this.f = frmClient;
