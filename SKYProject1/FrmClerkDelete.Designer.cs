@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnModify = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,7 +45,7 @@
             // 
             // btnModify
             // 
-            this.btnModify.Location = new System.Drawing.Point(185, 221);
+            this.btnModify.Location = new System.Drawing.Point(80, 260);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(75, 23);
             this.btnModify.TabIndex = 52;
@@ -54,29 +53,19 @@
             this.btnModify.UseVisualStyleBackColor = true;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(34, 221);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 51;
-            this.btnExit.Text = "退出";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 172);
+            this.label7.Location = new System.Drawing.Point(36, 201);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 12);
+            this.label7.Size = new System.Drawing.Size(65, 12);
             this.label7.TabIndex = 44;
-            this.label7.Text = "地      址：";
+            this.label7.Text = "家庭住址：";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 144);
+            this.label6.Location = new System.Drawing.Point(34, 167);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 12);
             this.label6.TabIndex = 43;
@@ -85,43 +74,43 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 116);
+            this.label5.Location = new System.Drawing.Point(34, 133);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 12);
+            this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 42;
-            this.label5.Text = "电话  号码：";
+            this.label5.Text = "电话号码：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 90);
+            this.label4.Location = new System.Drawing.Point(36, 99);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 12);
+            this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 41;
-            this.label4.Text = "性      别：";
+            this.label4.Text = "性别：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 65);
+            this.label3.Location = new System.Drawing.Point(36, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 12);
+            this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 40;
-            this.label3.Text = "姓      名：";
+            this.label3.Text = "姓名：";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 32);
+            this.label1.Location = new System.Drawing.Point(36, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 12);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 39;
-            this.label1.Text = "用  户  名：";
+            this.label1.Text = "用户名：";
             // 
             // lblClerkName
             // 
             this.lblClerkName.AutoSize = true;
-            this.lblClerkName.Location = new System.Drawing.Point(122, 65);
+            this.lblClerkName.Location = new System.Drawing.Point(126, 65);
             this.lblClerkName.Name = "lblClerkName";
             this.lblClerkName.Size = new System.Drawing.Size(41, 12);
             this.lblClerkName.TabIndex = 54;
@@ -130,7 +119,7 @@
             // lblsex
             // 
             this.lblsex.AutoSize = true;
-            this.lblsex.Location = new System.Drawing.Point(122, 90);
+            this.lblsex.Location = new System.Drawing.Point(126, 99);
             this.lblsex.Name = "lblsex";
             this.lblsex.Size = new System.Drawing.Size(41, 12);
             this.lblsex.TabIndex = 55;
@@ -139,7 +128,7 @@
             // lblTelePhone
             // 
             this.lblTelePhone.AutoSize = true;
-            this.lblTelePhone.Location = new System.Drawing.Point(122, 116);
+            this.lblTelePhone.Location = new System.Drawing.Point(126, 133);
             this.lblTelePhone.Name = "lblTelePhone";
             this.lblTelePhone.Size = new System.Drawing.Size(41, 12);
             this.lblTelePhone.TabIndex = 56;
@@ -148,7 +137,7 @@
             // lblNumber
             // 
             this.lblNumber.AutoSize = true;
-            this.lblNumber.Location = new System.Drawing.Point(122, 144);
+            this.lblNumber.Location = new System.Drawing.Point(126, 167);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(47, 12);
             this.lblNumber.TabIndex = 57;
@@ -157,7 +146,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(122, 172);
+            this.lblAddress.Location = new System.Drawing.Point(126, 201);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(47, 12);
             this.lblAddress.TabIndex = 58;
@@ -166,17 +155,17 @@
             // lblUid
             // 
             this.lblUid.AutoSize = true;
-            this.lblUid.Location = new System.Drawing.Point(124, 32);
+            this.lblUid.Location = new System.Drawing.Point(126, 31);
             this.lblUid.Name = "lblUid";
             this.lblUid.Size = new System.Drawing.Size(41, 12);
             this.lblUid.TabIndex = 59;
             this.lblUid.Text = "label2";
             // 
-            // FrmDeleteClerk
+            // FrmClerkDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 293);
+            this.ClientSize = new System.Drawing.Size(227, 319);
             this.Controls.Add(this.lblUid);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblNumber);
@@ -184,15 +173,14 @@
             this.Controls.Add(this.lblsex);
             this.Controls.Add(this.lblClerkName);
             this.Controls.Add(this.btnModify);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "FrmDeleteClerk";
-            this.Text = "删除店员信息";
+            this.Name = "FrmClerkDelete";
+            this.Text = "删除信息";
             this.Load += new System.EventHandler(this.FrmDeleteClerk_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,7 +190,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnModify;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

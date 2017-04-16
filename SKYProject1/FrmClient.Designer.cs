@@ -34,14 +34,14 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tsmiQuery = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiModify = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDelete = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tsmiQuery = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
@@ -56,10 +56,10 @@
             this.columnHeader4});
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(1, 28);
+            this.listView1.Location = new System.Drawing.Point(12, 28);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(530, 334);
+            this.listView1.Size = new System.Drawing.Size(507, 322);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -82,6 +82,26 @@
             // 
             this.columnHeader4.Text = "住址";
             this.columnHeader4.Width = 252;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiModify,
+            this.tsmiDelete});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
+            // 
+            // tsmiModify
+            // 
+            this.tsmiModify.Name = "tsmiModify";
+            this.tsmiModify.Size = new System.Drawing.Size(100, 22);
+            this.tsmiModify.Text = "修改";
+            // 
+            // tsmiDelete
+            // 
+            this.tsmiDelete.Name = "tsmiDelete";
+            this.tsmiDelete.Size = new System.Drawing.Size(100, 22);
+            this.tsmiDelete.Text = "删除";
             // 
             // menuStrip1
             // 
@@ -107,26 +127,6 @@
             this.tsmiAdd.Size = new System.Drawing.Size(68, 21);
             this.tsmiAdd.Text = "增加客户";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiModify,
-            this.tsmiDelete});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
-            // 
-            // tsmiModify
-            // 
-            this.tsmiModify.Name = "tsmiModify";
-            this.tsmiModify.Size = new System.Drawing.Size(100, 22);
-            this.tsmiModify.Text = "修改";
-            // 
-            // tsmiDelete
-            // 
-            this.tsmiDelete.Name = "tsmiDelete";
-            this.tsmiDelete.Size = new System.Drawing.Size(100, 22);
-            this.tsmiDelete.Text = "删除";
-            // 
             // FrmClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -138,9 +138,9 @@
             this.Name = "FrmClient";
             this.Text = "客户管理";
             this.Load += new System.EventHandler(this.FrmClient_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -50,34 +50,34 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 30;
-            this.btnSave.Text = "保存";
+            this.btnSave.Text = "修改";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(110, 208);
+            this.txtAddress.Location = new System.Drawing.Point(110, 226);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(140, 21);
             this.txtAddress.TabIndex = 29;
             // 
             // txtIDNumber
             // 
-            this.txtIDNumber.Location = new System.Drawing.Point(110, 170);
+            this.txtIDNumber.Location = new System.Drawing.Point(110, 186);
             this.txtIDNumber.Name = "txtIDNumber";
             this.txtIDNumber.Size = new System.Drawing.Size(140, 21);
             this.txtIDNumber.TabIndex = 28;
             // 
             // txtKeeperName
             // 
-            this.txtKeeperName.Location = new System.Drawing.Point(110, 63);
+            this.txtKeeperName.Location = new System.Drawing.Point(110, 69);
             this.txtKeeperName.Name = "txtKeeperName";
             this.txtKeeperName.Size = new System.Drawing.Size(140, 21);
             this.txtKeeperName.TabIndex = 26;
             // 
             // txtTelephone
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(110, 132);
+            this.txtTelephone.Location = new System.Drawing.Point(110, 141);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(140, 21);
             this.txtTelephone.TabIndex = 25;
@@ -92,7 +92,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(29, 211);
+            this.lblAddress.Location = new System.Drawing.Point(29, 229);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(65, 12);
             this.lblAddress.TabIndex = 23;
@@ -101,7 +101,7 @@
             // lblIDNumber
             // 
             this.lblIDNumber.AutoSize = true;
-            this.lblIDNumber.Location = new System.Drawing.Point(29, 173);
+            this.lblIDNumber.Location = new System.Drawing.Point(29, 189);
             this.lblIDNumber.Name = "lblIDNumber";
             this.lblIDNumber.Size = new System.Drawing.Size(53, 12);
             this.lblIDNumber.TabIndex = 22;
@@ -110,7 +110,7 @@
             // lblTelephone
             // 
             this.lblTelephone.AutoSize = true;
-            this.lblTelephone.Location = new System.Drawing.Point(29, 135);
+            this.lblTelephone.Location = new System.Drawing.Point(29, 144);
             this.lblTelephone.Name = "lblTelephone";
             this.lblTelephone.Size = new System.Drawing.Size(65, 12);
             this.lblTelephone.TabIndex = 21;
@@ -119,7 +119,7 @@
             // lblSex
             // 
             this.lblSex.AutoSize = true;
-            this.lblSex.Location = new System.Drawing.Point(29, 99);
+            this.lblSex.Location = new System.Drawing.Point(29, 108);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(41, 12);
             this.lblSex.TabIndex = 20;
@@ -128,7 +128,7 @@
             // lblKeeperName
             // 
             this.lblKeeperName.AutoSize = true;
-            this.lblKeeperName.Location = new System.Drawing.Point(29, 66);
+            this.lblKeeperName.Location = new System.Drawing.Point(29, 72);
             this.lblKeeperName.Name = "lblKeeperName";
             this.lblKeeperName.Size = new System.Drawing.Size(41, 12);
             this.lblKeeperName.TabIndex = 19;
@@ -146,7 +146,7 @@
             // rboFeMale
             // 
             this.rboFeMale.AutoSize = true;
-            this.rboFeMale.Location = new System.Drawing.Point(184, 99);
+            this.rboFeMale.Location = new System.Drawing.Point(184, 108);
             this.rboFeMale.Name = "rboFeMale";
             this.rboFeMale.Size = new System.Drawing.Size(35, 16);
             this.rboFeMale.TabIndex = 32;
@@ -157,7 +157,7 @@
             // rboMale
             // 
             this.rboMale.AutoSize = true;
-            this.rboMale.Location = new System.Drawing.Point(110, 99);
+            this.rboMale.Location = new System.Drawing.Point(110, 108);
             this.rboMale.Name = "rboMale";
             this.rboMale.Size = new System.Drawing.Size(35, 16);
             this.rboMale.TabIndex = 31;
@@ -185,7 +185,7 @@
             this.Controls.Add(this.lblKeeperName);
             this.Controls.Add(this.lblUid);
             this.Name = "FrmKeeperUpdate";
-            this.Text = "编辑界面";
+            this.Text = "编辑";
             this.Load += new System.EventHandler(this.FrmUpdateKeeper_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

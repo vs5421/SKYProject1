@@ -51,7 +51,6 @@ namespace SKYProject1
                 if (reader.Read())
                 {
                     this.lblUid.Text = reader.GetString(reader.GetOrdinal("Uid"));
-                    this.lblPassword.Text = reader.GetString(reader.GetOrdinal("Password"));
                     this.lblKeeperName.Text = reader.GetString(reader.GetOrdinal("KeeperName"));
                     this.lblSex.Text = reader.GetString(reader.GetOrdinal("Sex"));
                     this.lblTelephone.Text = reader.GetString(reader.GetOrdinal("Telephone"));

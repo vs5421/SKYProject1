@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnModify = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtIDNumber = new System.Windows.Forms.TextBox();
             this.txtTelephone = new System.Windows.Forms.TextBox();
@@ -50,7 +49,7 @@
             // 
             // btnModify
             // 
-            this.btnModify.Location = new System.Drawing.Point(185, 218);
+            this.btnModify.Location = new System.Drawing.Point(115, 294);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(75, 23);
             this.btnModify.TabIndex = 37;
@@ -58,33 +57,23 @@
             this.btnModify.UseVisualStyleBackColor = true;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(34, 218);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 36;
-            this.btnExit.Text = "退出";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(115, 166);
+            this.txtAddress.Location = new System.Drawing.Point(115, 237);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(145, 21);
             this.txtAddress.TabIndex = 35;
             // 
             // txtIDNumber
             // 
-            this.txtIDNumber.Location = new System.Drawing.Point(115, 138);
+            this.txtIDNumber.Location = new System.Drawing.Point(115, 194);
             this.txtIDNumber.Name = "txtIDNumber";
             this.txtIDNumber.Size = new System.Drawing.Size(145, 21);
             this.txtIDNumber.TabIndex = 34;
             // 
             // txtTelephone
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(115, 110);
+            this.txtTelephone.Location = new System.Drawing.Point(115, 149);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(145, 21);
             this.txtTelephone.TabIndex = 33;
@@ -92,7 +81,7 @@
             // rabWoman
             // 
             this.rabWoman.AutoSize = true;
-            this.rabWoman.Location = new System.Drawing.Point(191, 87);
+            this.rabWoman.Location = new System.Drawing.Point(191, 108);
             this.rabWoman.Name = "rabWoman";
             this.rabWoman.Size = new System.Drawing.Size(35, 16);
             this.rabWoman.TabIndex = 32;
@@ -103,7 +92,7 @@
             // 
             this.rabMan.AutoSize = true;
             this.rabMan.Checked = true;
-            this.rabMan.Location = new System.Drawing.Point(115, 87);
+            this.rabMan.Location = new System.Drawing.Point(115, 108);
             this.rabMan.Name = "rabMan";
             this.rabMan.Size = new System.Drawing.Size(35, 16);
             this.rabMan.TabIndex = 31;
@@ -113,7 +102,7 @@
             // 
             // txtClerkName
             // 
-            this.txtClerkName.Location = new System.Drawing.Point(115, 59);
+            this.txtClerkName.Location = new System.Drawing.Point(115, 64);
             this.txtClerkName.Name = "txtClerkName";
             this.txtClerkName.Size = new System.Drawing.Size(145, 21);
             this.txtClerkName.TabIndex = 30;
@@ -121,7 +110,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 169);
+            this.label7.Location = new System.Drawing.Point(32, 240);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 12);
             this.label7.TabIndex = 25;
@@ -130,7 +119,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 141);
+            this.label6.Location = new System.Drawing.Point(32, 197);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 12);
             this.label6.TabIndex = 24;
@@ -139,7 +128,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 113);
+            this.label5.Location = new System.Drawing.Point(32, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 12);
             this.label5.TabIndex = 23;
@@ -148,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 87);
+            this.label4.Location = new System.Drawing.Point(32, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 12);
             this.label4.TabIndex = 22;
@@ -157,7 +146,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 62);
+            this.label3.Location = new System.Drawing.Point(32, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 12);
             this.label3.TabIndex = 21;
@@ -187,10 +176,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 298);
+            this.ClientSize = new System.Drawing.Size(292, 345);
             this.Controls.Add(this.txtUid);
             this.Controls.Add(this.btnModify);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtIDNumber);
             this.Controls.Add(this.txtTelephone);
@@ -204,7 +192,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "FrmClerkModify";
-            this.Text = "修改店员信息";
+            this.Text = "编辑";
             this.Load += new System.EventHandler(this.FrmModifyClerk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -215,7 +203,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnModify;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtIDNumber;
         private System.Windows.Forms.TextBox txtTelephone;
