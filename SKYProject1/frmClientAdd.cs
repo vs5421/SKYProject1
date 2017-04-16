@@ -19,7 +19,7 @@ namespace SKYProject1
             InitializeComponent();
         }
         private string myCon = ConfigurationManager.ConnectionStrings["myCon"].ConnectionString;
-        DBHelp helper = new DBHelp();
+        DBHelper helper = new DBHelper();
 
         private void btnCancel_Click(object sender, EventArgs e)
         {

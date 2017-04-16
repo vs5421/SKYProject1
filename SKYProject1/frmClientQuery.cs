@@ -19,16 +19,18 @@ namespace SKYProject1
         {
             InitializeComponent();
         }
-        //将Client窗体传入进来，让子窗体能够控制父窗体
-        public FrmClientQuery(FrmClient frmClient)
+        public FrmClientQuery(string clientNo)
         {
             InitializeComponent();
-            this.f = frmClient;
+            this.clientNo = clientNo;
         }
+
         private FrmClient f;
         //建立连接地址
         private string myCon = ConfigurationManager.ConnectionStrings["myCon"].ConnectionString;
-        DBHelp helper = new DBHelp();
+        DBHelper helper = new DBHelper();
+        private string clientNo;
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -40,37 +42,37 @@ namespace SKYProject1
             string strTxtName = this.txtName.Text;
             string strTxtSex = this.cboSex.Text;
             string strTxtPhone = this.txtPhone.Text;
-            string strSql = "select ClientNo,ClientName,Sex,Telephone from Client where (ClientNo=@ClientNo or LEN(@ClientNo)=0) and (charIndex(@ClientName,ClientName)>0 or LEN(@CLientName)=0) and (Sex=@Sex or LEN(@Sex)=0 and (Telephone=@TelePhone or LEN(@TelePhone)=0))";
-            SqlDataReader reader = helper.ExecuteReader(strSql, CommandType.Text,
+            string strSql = "update Client set ClientNo=@ClientNo,ClientName=@ClientName,Sex=@Sex,TelePhone=@TelePhone where ClientNo=@NO";
+            int rows = helper.ExecuteNonQuery(strSql, CommandType.Text,
+                 new SqlParameter("@NO", clientNo),
                 new SqlParameter("@ClientNo", strTxtNo),
                 new SqlParameter("@ClientName", strTxtName),
                 new SqlParameter("@Sex", strTxtSex),
                 new SqlParameter("@TelePhone", strTxtPhone)
                 );
-
-            //每次查询前先清空ListView控件里的数据
-            f.listView1.Items.Clear();
-            //定义一个Flag，当能查到数据的时候关闭窗口，s查询不到数据的时候做出提示
-            bool flag = false;
-            //将查询到的，导入到父窗体里
-            while(reader.Read())
+            if(rows > 0)
             {
-                ListViewItem lvi = new ListViewItem(reader.GetString(reader.GetOrdinal("ClientNo")));
-                lvi.SubItems.Add(reader.GetString(reader.GetOrdinal("ClientName")));
-                lvi.SubItems.Add(reader.GetString(reader.GetOrdinal("Sex")));
-                lvi.SubItems.Add(reader.GetString(reader.GetOrdinal("Telephone")));
-                f.listView1.Items.Add(lvi);
-                flag = true;
-            }
-            reader.Close();
-            if(flag)
-            {
+                MessageBox.Show("修改成功！");
                 this.Close();
             }
             else
             {
-                MessageBox.Show("未查询到任何数据，请重试！");
+                MessageBox.Show("修改失败！");
             }
+        }
+
+        private void FrmClientQuery_Load(object sender, EventArgs e)
+        {
+            string strSql = "select ClientName,Sex,TelePhone from Client where ClientNo=@ClientNo";
+            SqlDataReader reader = helper.ExecuteReader(strSql, CommandType.Text, new SqlParameter("@ClientNo", clientNo));
+            if(reader.Read())
+            {
+                txtNo.Text = clientNo;
+                txtName.Text = reader.GetString(reader.GetOrdinal("ClientName"));
+                cboSex.Text= reader.GetString(reader.GetOrdinal("Sex"));
+                txtPhone.Text = reader.GetString(reader.GetOrdinal("TelePhone"));
+            }
+            reader.Close();
         }
     }
 }

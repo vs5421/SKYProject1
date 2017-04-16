@@ -20,16 +20,16 @@ namespace SKYProject1
         }
 
         private string myCon = ConfigurationManager.ConnectionStrings["myCon"].ConnectionString;
-        DBHelp helper = new DBHelp();
+        DBHelper helper = new DBHelper();
 
         private void FrmClient_Load(object sender, EventArgs e)
         {
             ShowInformation();
         }
-        private async void ShowInformation()
+        private  void ShowInformation()
         {
             string strSql = "select ClientNo,ClientName,Sex,Telephone from Client";
-            SqlDataReader reader = await helper.ExecuteReaderAsync(strSql, CommandType.Text);
+            SqlDataReader reader = helper.ExecuteReader(strSql, CommandType.Text);
             this.listView1.Items.Clear();
             while (reader.Read())
             {
@@ -42,29 +42,26 @@ namespace SKYProject1
             reader.Close();
         }
         //查询客户信息
-        FrmClientQuery fQuery;
-        private void tsmiQuery_Click(object sender, EventArgs e)
+      
+
+        private void btnADDClient_Click(object sender, EventArgs e)
         {
-            fQuery = null;
-            fQuery = new FrmClientQuery(this);
-            fQuery.Show();
-        }
-        //增加客户信息
-        FrmClientAdd fAdd;
-        private void tsmiAdd_Click(object sender, EventArgs e)
-        {
-            fAdd = null;
-            fAdd = new FrmClientAdd();
-            fAdd.Show();
-            //添加完数据后重新显示一遍
+            FrmClientAdd f = new FrmClientAdd();
+            f.ShowDialog();
             ShowInformation();
         }
-        //删除客户信息
-        FrmClientDelete fDelete;
-        private void tsmiDelete_Click(object sender, EventArgs e)
+
+        private void tsmiModify_Click(object sender, EventArgs e)
         {
-            //获取选中项的客户编号
-            string ClientNo=listView1.SelectedItems[0].Text;
+            string ClientNo = listView1.SelectedItems[0].Text;
+            FrmClientQuery f = new FrmClientQuery(ClientNo);
+            f.ShowDialog();
+            ShowInformation();
+        }
+        FrmClientDelete fDelete;
+        private void tsmiDelete_Click_1(object sender, EventArgs e)
+        {
+            string ClientNo = listView1.SelectedItems[0].Text;
             fDelete = null;
             fDelete = new FrmClientDelete(ClientNo);
             fDelete.ShowDialog();

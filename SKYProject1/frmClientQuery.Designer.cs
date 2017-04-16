@@ -46,7 +46,7 @@
             this.btnQuery.Name = "btnQuery";
             this.btnQuery.Size = new System.Drawing.Size(75, 23);
             this.btnQuery.TabIndex = 4;
-            this.btnQuery.Text = "查找";
+            this.btnQuery.Text = "修改";
             this.btnQuery.UseVisualStyleBackColor = true;
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
@@ -128,7 +128,7 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // frmClientQuery
+            // FrmClientQuery
             // 
             this.AcceptButton = this.btnQuery;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -144,9 +144,10 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblNo);
             this.Controls.Add(this.btnQuery);
-            this.Name = "frmClientQuery";
+            this.Name = "FrmClientQuery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "查询客户信息";
+            this.Text = "修改客户信息";
+            this.Load += new System.EventHandler(this.FrmClientQuery_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

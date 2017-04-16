@@ -24,7 +24,7 @@ namespace SKYProject1
         }
         //从父窗体把要删除的编号查询出来
         private string ClientNo;
-        DBHelp helper = new DBHelp();
+        DBHelper helper = new DBHelper();
 
 
         private void btnCancel_Click(object sender, EventArgs e)

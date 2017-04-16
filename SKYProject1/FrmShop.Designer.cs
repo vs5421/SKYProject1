@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.PersonnelManaGementTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.ClerkTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.ClientTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.SalesTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.SalesListTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.BillOfLadingTSMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.PersonnelManaGementTSMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClerkTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeThePasswordTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.ClerkManagementTSMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClientTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.ClientManagementTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMLRecoRdsOfTheQuery = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -53,6 +53,27 @@
             this.menuStrip1.Size = new System.Drawing.Size(430, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // SalesTSMI
+            // 
+            this.SalesTSMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SalesListTSMI,
+            this.BillOfLadingTSMI});
+            this.SalesTSMI.Name = "SalesTSMI";
+            this.SalesTSMI.Size = new System.Drawing.Size(44, 21);
+            this.SalesTSMI.Text = "销售";
+            // 
+            // SalesListTSMI
+            // 
+            this.SalesListTSMI.Name = "SalesListTSMI";
+            this.SalesListTSMI.Size = new System.Drawing.Size(112, 22);
+            this.SalesListTSMI.Text = "销售单";
+            // 
+            // BillOfLadingTSMI
+            // 
+            this.BillOfLadingTSMI.Name = "BillOfLadingTSMI";
+            this.BillOfLadingTSMI.Size = new System.Drawing.Size(112, 22);
+            this.BillOfLadingTSMI.Text = "提货单";
             // 
             // PersonnelManaGementTSMI
             // 
@@ -71,7 +92,20 @@
             this.ClerkTSMI.Name = "ClerkTSMI";
             this.ClerkTSMI.Size = new System.Drawing.Size(152, 22);
             this.ClerkTSMI.Text = "店员";
-            this.ClerkTSMI.Click += new System.EventHandler(this.TSMIClerkManagement_Click);
+            // 
+            // ChangeThePasswordTSMI
+            // 
+            this.ChangeThePasswordTSMI.Name = "ChangeThePasswordTSMI";
+            this.ChangeThePasswordTSMI.Size = new System.Drawing.Size(152, 22);
+            this.ChangeThePasswordTSMI.Text = "修改密码";
+            this.ChangeThePasswordTSMI.Click += new System.EventHandler(this.ChangeThePasswordTSMI_Click);
+            // 
+            // ClerkManagementTSMI
+            // 
+            this.ClerkManagementTSMI.Name = "ClerkManagementTSMI";
+            this.ClerkManagementTSMI.Size = new System.Drawing.Size(152, 22);
+            this.ClerkManagementTSMI.Text = "店员管理";
+            this.ClerkManagementTSMI.Click += new System.EventHandler(this.ClerkManagementTSMI_Click);
             // 
             // ClientTSMI
             // 
@@ -81,44 +115,12 @@
             this.ClientTSMI.Size = new System.Drawing.Size(152, 22);
             this.ClientTSMI.Text = "客户";
             // 
-            // SalesTSMI
-            // 
-            this.SalesTSMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SalesListTSMI,
-            this.BillOfLadingTSMI});
-            this.SalesTSMI.Name = "SalesTSMI";
-            this.SalesTSMI.Size = new System.Drawing.Size(44, 21);
-            this.SalesTSMI.Text = "销售";
-            // 
-            // SalesListTSMI
-            // 
-            this.SalesListTSMI.Name = "SalesListTSMI";
-            this.SalesListTSMI.Size = new System.Drawing.Size(152, 22);
-            this.SalesListTSMI.Text = "销售单";
-            // 
-            // BillOfLadingTSMI
-            // 
-            this.BillOfLadingTSMI.Name = "BillOfLadingTSMI";
-            this.BillOfLadingTSMI.Size = new System.Drawing.Size(152, 22);
-            this.BillOfLadingTSMI.Text = "提货单";
-            // 
-            // ChangeThePasswordTSMI
-            // 
-            this.ChangeThePasswordTSMI.Name = "ChangeThePasswordTSMI";
-            this.ChangeThePasswordTSMI.Size = new System.Drawing.Size(152, 22);
-            this.ChangeThePasswordTSMI.Text = "修改密码";
-            // 
-            // ClerkManagementTSMI
-            // 
-            this.ClerkManagementTSMI.Name = "ClerkManagementTSMI";
-            this.ClerkManagementTSMI.Size = new System.Drawing.Size(152, 22);
-            this.ClerkManagementTSMI.Text = "店员管理";
-            // 
             // ClientManagementTSMI
             // 
             this.ClientManagementTSMI.Name = "ClientManagementTSMI";
             this.ClientManagementTSMI.Size = new System.Drawing.Size(152, 22);
             this.ClientManagementTSMI.Text = "客户管理";
+            this.ClientManagementTSMI.Click += new System.EventHandler(this.ClientManagementTSMI_Click);
             // 
             // TSMLRecoRdsOfTheQuery
             // 

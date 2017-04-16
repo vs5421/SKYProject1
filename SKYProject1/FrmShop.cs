@@ -17,19 +17,23 @@ namespace SKYProject1
             InitializeComponent();
         }
 
-        private void btnClerk_Click(object sender, EventArgs e)
+        private void ChangeThePasswordTSMI_Click(object sender, EventArgs e)
         {
-            
+            FrmClerkModifyPassword f = new FrmClerkModifyPassword();
+            f.MdiParent = this;
+            f.Show();
         }
 
-        private void btnClient_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TSMIClerkManagement_Click(object sender, EventArgs e)
+        private void ClerkManagementTSMI_Click(object sender, EventArgs e)
         {
             FrmClerkPrint f = new FrmClerkPrint();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void ClientManagementTSMI_Click(object sender, EventArgs e)
+        {
+            FrmClient f = new FrmClient();
             f.MdiParent = this;
             f.Show();
         }

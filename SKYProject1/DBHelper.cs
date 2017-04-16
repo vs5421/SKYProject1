@@ -16,7 +16,7 @@ namespace SKYProject1
             cmd = new SqlCommand();
             cmd.Connection = con;
         }
-        private string strCon = @"server=.\SQL2014;database=SkyProject;uid=sa;password=123";
+        private string strCon = @"server=DESKTOP-CBE5RT7;database=SkyProject;uid=sa;password=123";
         private SqlConnection con = null;
         private SqlCommand cmd = null;
 
