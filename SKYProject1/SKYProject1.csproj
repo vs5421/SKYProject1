@@ -72,11 +72,23 @@
     <Compile Include="FrmClient.Designer.cs">
       <DependentUpon>FrmClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmClientQuery.cs">
+    <Compile Include="FrmClientAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClientQuery.Designer.cs">
-      <DependentUpon>frmClientQuery.cs</DependentUpon>
+    <Compile Include="FrmClientAdd.Designer.cs">
+      <DependentUpon>FrmClientAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientDelete.Designer.cs">
+      <DependentUpon>FrmClientDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientQuery.Designer.cs">
+      <DependentUpon>FrmClientQuery.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmClerkDelete.cs">
       <SubType>Form</SubType>
@@ -152,8 +164,14 @@
     <EmbeddedResource Include="FrmClient.resx">
       <DependentUpon>FrmClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmClientQuery.resx">
-      <DependentUpon>frmClientQuery.cs</DependentUpon>
+    <EmbeddedResource Include="FrmClientAdd.resx">
+      <DependentUpon>FrmClientAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientDelete.resx">
+      <DependentUpon>FrmClientDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientQuery.resx">
+      <DependentUpon>FrmClientQuery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClerkDelete.resx">
       <DependentUpon>FrmClerkDelete.cs</DependentUpon>

@@ -33,7 +33,7 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiModify = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDelete = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,8 +53,9 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader5});
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
+            this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(12, 28);
             this.listView1.MultiSelect = false;
@@ -67,6 +68,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "编号";
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
@@ -75,13 +77,34 @@
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "联系电话";
+            this.columnHeader3.Text = "性别";
             this.columnHeader3.Width = 125;
             // 
-            // columnHeader4
+            // columnHeader5
             // 
-            this.columnHeader4.Text = "住址";
-            this.columnHeader4.Width = 252;
+            this.columnHeader5.Text = "联系电话";
+            this.columnHeader5.Width = 250;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiModify,
+            this.tsmiDelete});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
+            // 
+            // tsmiModify
+            // 
+            this.tsmiModify.Name = "tsmiModify";
+            this.tsmiModify.Size = new System.Drawing.Size(100, 22);
+            this.tsmiModify.Text = "修改";
+            // 
+            // tsmiDelete
+            // 
+            this.tsmiDelete.Name = "tsmiDelete";
+            this.tsmiDelete.Size = new System.Drawing.Size(152, 22);
+            this.tsmiDelete.Text = "删除";
+            this.tsmiDelete.Click += new System.EventHandler(this.tsmiDelete_Click);
             // 
             // contextMenuStrip1
             // 
@@ -127,6 +150,26 @@
             this.tsmiAdd.Size = new System.Drawing.Size(68, 21);
             this.tsmiAdd.Text = "增加客户";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiModify,
+            this.tsmiDelete});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
+            // 
+            // tsmiModify
+            // 
+            this.tsmiModify.Name = "tsmiModify";
+            this.tsmiModify.Size = new System.Drawing.Size(100, 22);
+            this.tsmiModify.Text = "修改";
+            // 
+            // tsmiDelete
+            // 
+            this.tsmiDelete.Name = "tsmiDelete";
+            this.tsmiDelete.Size = new System.Drawing.Size(100, 22);
+            this.tsmiDelete.Text = "删除";
+            // 
             // FrmClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -136,6 +179,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmClient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "客户管理";
             this.Load += new System.EventHandler(this.FrmClient_Load);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -147,16 +191,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmiQuery;
         private System.Windows.Forms.ToolStripMenuItem tsmiAdd;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmiModify;
         private System.Windows.Forms.ToolStripMenuItem tsmiDelete;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        public System.Windows.Forms.ListView listView1;
     }
 }
